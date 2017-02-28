@@ -12,9 +12,6 @@ export default class CompIcon extends Component {
   }
 
   render () {
-    console.log(this.state)
-    return (
-      <div>SvgIcons</div>
-    )
+    return <span dangerouslySetInnerHTML={{ __html: this.state.svgTemplate }}></span>
   }
 }

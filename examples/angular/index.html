@@ -3,15 +3,19 @@
   <head>
     <title>Angular Example</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
-    <script src="svgService.js"></script>
-    <script src="ccIcons.js"></script>
-    <script src="index.js"></script>
   </head>
   <body>
     <h1>Angular JS Example</h1>
     <div ng-controller="TestController as TestController">
-      <p>{{TestController.text}}</p>
-      <comp-icon type="SALE"></comp-icon>
+      <comp-icon type="SALE" value="1"></comp-icon>
+      <comp-icon type="SALEAPPRAISAL" value="13"></comp-icon>
+      <comp-icon type="LISTING" value="100"></comp-icon>
+      <comp-icon type="LISTINGAPPRAISAL" value="10"></comp-icon>
+      <comp-icon type="VALUE_CONCLUSION"></comp-icon>
     </div>
+
+    <script src="../svgService.js"></script>
+    <script src="ccIcons.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

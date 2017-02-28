@@ -8,4 +8,4 @@ const iconsArray =[
   svgService.getTemplate('VALUE_CONCLUSION')
 ]
 
-icons.innerHTML =  iconsArray.join('<br>')
+icons.innerHTML =  iconsArray.join(' ')
