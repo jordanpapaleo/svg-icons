@@ -1,4 +1,8 @@
+import svgService from '../svgService'
+
 const icons = document.querySelector('.icons')
+
+console.log('icons', icons)
 
 const iconsArray =[
   svgService.getTemplate('SALE', 3),

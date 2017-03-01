@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import svgService from './svgService'
+import svgService from '../svgService'
 
 export default class CompIcon extends Component {
   static propTypes = {

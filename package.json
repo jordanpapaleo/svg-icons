@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --config ./webpack.angular.js",
-    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack.angular.js --progress --no-info --port 3001",
+    "build": "./node_modules/.bin/webpack --config ./webpack.dev.js",
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack.dev.js --progress --hot --inline --no-info --port 3001",
     "build:ex1": "babel ./src/vanilla.js --out-file ./examples/vanilla/svgService.js; browserify ./examples/vanilla/svgService.js -o ./examples/svgService.js",
     "build:ex": "browserify ./src/vanilla.js -o ./examples/svgService.js -t [babelify --presets [es2015 stage-1]]"
   },
@@ -14,7 +14,8 @@
   "dependencies": {
     "angular": "1.6.2",
     "classnames": "2.2.5",
-    "react": "15.4.2"
+    "react": "15.4.2",
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
