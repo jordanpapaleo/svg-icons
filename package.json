@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/webpack --config ./webpack.dev.js",
+    "build:dev": "./node_modules/.bin/webpack --config ./webpack.dev.js",
+    "build:prod": "./node_modules/.bin/webpack --config ./webpack.prod.js",
     "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack.dev.js --progress --hot --inline --no-info --port 3001",
     "build:ex1": "babel ./src/vanilla.js --out-file ./examples/vanilla/svgService.js; browserify ./examples/vanilla/svgService.js -o ./examples/svgService.js",
     "build:ex": "browserify ./src/vanilla.js -o ./examples/svgService.js -t [babelify --presets [es2015 stage-1]]"
